@@ -1,10 +1,11 @@
 import imaplib
 import email
 from email.header import decode_header
+import getpass
 
 # your email and password
-username = "your-email@gmail.com"
-password = "your-password"
+username = "seb.karrer@gmail.com"
+password = getpass.getpass("Enter your password: ")
 
 # create an IMAP4 class with SSL 
 mail = imaplib.IMAP4_SSL("imap.gmail.com")
